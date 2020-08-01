@@ -130,7 +130,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/workspace/catkin_ws/build/rviz_config_file/cmake_install.cmake")
   include("/home/workspace/catkin_ws/build/teleop_twist_keyboard/cmake_install.cmake")
   include("/home/workspace/catkin_ws/build/ball_chaser/cmake_install.cmake")
-  include("/home/workspace/catkin_ws/build/pgm_map_creator/cmake_install.cmake")
   include("/home/workspace/catkin_ws/build/robot_pose_ekf/cmake_install.cmake")
 
 endif()
