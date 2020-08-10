@@ -36,13 +36,13 @@
 
 
       <!-- RTAB-Map Inputs -->
-      <remap from="scan" to="/scan"/>
+      <remap from="scan" to="/scan"/> <!-- Check remap of scane -->
       <remap from="rgb/image" to="$(arg rgb_topic)"/>
       <remap from="depth/image" to="$(arg depth_topic)"/>
       <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
 
       <!-- RTAB-Map Output -->
-      <remap from="grid_map" to="/map"/>
+      <remap from="/grid_map" to="/map"/> <!-- add move base node-->
 
       <!-- Rate (Hz) at which new nodes are added to map -->
       <param name="Rtabmap/DetectionRate" type="string" value="1"/>
@@ -80,7 +80,7 @@
       <param name="RGBD/OptimizeMaxError"     type="string" value="3"/>	    <!-- Reject any loop closure causing large errors (>3x link's covariance) in the map -->
       <param name="Mem/STMSize"               type="string" value="30"/>    <!-- increased to 30 to avoid adding too many loop closures on just seen locations -->
       <param name="Icp/CorrespondenceRatio"   type="string" value="0.4"/>   <!-- minimum scan overlap to accept loop closure -->
-  
+      <param name="Rtabmap/TimeThr"   type="string" value="0"/> 
 
     </node>
     

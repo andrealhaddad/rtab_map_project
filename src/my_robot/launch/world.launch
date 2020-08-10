@@ -34,7 +34,7 @@
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
   <node name="rviz" pkg="rviz" type="rviz"  args="-d $(find rviz_config_file)/config_rviz.rviz"/>
-    
+    <!-- args="-d $(find rviz_config_file)/config_rviz.rviz" -->
   <!--include file="$(find robot_pose_ekf)/robot_pose_ekf.launch"/-->
 
   <!--include file="$(find my_robot)/launch/amcl.launch"/-->
